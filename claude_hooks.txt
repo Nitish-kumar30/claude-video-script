@@ -1,0 +1,73 @@
+Claude Hooks — Video Script (v3 — revised for pacing)
+
+[0:00–0:15] 🏷️ HOOK
+Picture this: you ask your AI coding assistant to fix a bug. It edits the file...
+and forgets to run your formatter. So now the code style is a mess — again — 
+just like every other time this week. By the end of this video, 
+you'll know exactly what "Hooks" are in Claude Code, why they stop that 
+from ever happening again, and how to set one up yourself in a few minutes.
+
+On-screen: split screen — messy, inconsistently formatted code on the left 
+labeled "Without Hooks," clean formatted code on the right labeled "With Hooks."
+
+[0:15–0:30] 🏷️ WHO THIS IS FOR / WHERE TO FIND IT
+Quick and important note: this is a Claude Code feature — the terminal-based, developer tool version of Claude. Not the regular Claude.ai chat app or mobile app. If you write code and use Claude Code, this applies directly to you. If you only use Claude in a browser for writing or research, this specific feature isn't available to you — but the idea behind it is worth understanding either way.
+
+On-screen: logo/icon comparison — "Claude.ai (chat app)" with an X, "Claude Code (terminal tool)" with a checkmark.
+
+[0:30–1:00] 🏷️ WHAT IS IT
+Think of Hooks like the alarms and checklists a pilot's cockpit runs automatically before takeoff. The pilot doesn't have to remember to check the fuel gauge — the plane's systems just do it, every single time. Claude Hooks work the same way: they're rules you set up once that make specific actions happen automatically at key moments while Claude Code is working. Something like "run the formatter after every file edit," or "block any edit to the production config file."
+
+On-screen: cockpit checklist icon, simple and clean.
+
+[1:00–1:20] 🏷️ HOW THIS IS DIFFERENT FROM JUST ASKING
+Here's the beginner mix-up to avoid: this is not the same as typing "please always format my code" into chat. A chat instruction is a request — Claude tries to remember it, but can forget, get distracted, or skip it. A hook isn't a request. It's automatic. It runs every time, whether Claude "chooses to" or not.
+
+On-screen: simple diagram — a chat bubble crossed out labeled "Suggestion (can be missed)" next to a checklist icon labeled "Hook (always runs)."
+
+[1:20–1:45] 🏷️ WHY IT MATTERS
+The real frustration this solves: AI assistants are great at code, but inconsistent about the boring housekeeping. Formatting files. Logging what commands got run. Warning you before something risky happens. Without hooks, you end up double-checking the assistant's work every single time. With hooks, those rules are just... baked in. You set them up once, and they happen reliably, forever.
+
+[1:45–2:10] 🏷️ QUICK EXAMPLES
+A few ways people actually use this. One: automatically run a code formatter every time Claude edits a file. Two: get a desktop notification the moment Claude needs your permission to run something. Three: block Claude from ever touching certain files, like production configs — no matter what it's asked to do.
+
+On-screen: three quick icon cards — 🧹 "Auto-format," 🔔 "Get notified," 🔒 "Protect files."
+
+[2:10–2:50] 🏷️ SEE IT IN ACTION
+Here's what that looks like side by side. You ask Claude Code to "fix the login bug and clean up the file." Without a hook: Claude fixes the bug, but leaves inconsistent spacing and quote styles — formatting wasn't explicitly asked for, just implied. Now watch the same request with a formatting hook in place. The instant Claude saves that file, the hook fires on its own. Your formatter runs. The file comes out clean and consistent — with zero extra effort and zero extra instruction from you.
+
+On-screen: labeled mockup, side by side — "BEFORE (no hook): messy indentation, mixed quotes" vs. "AFTER (hook runs automatically): clean, consistent formatting" — with a small on-screen tag popping up: "Prettier ran automatically."
+
+[2:50–3:10] 🏷️ HOW IT WORKS — part one
+Here's the simple version of what's happening underneath. Think of a hook like a recipe card taped to a specific moment in Claude's workflow. Each card answers one question: when should this fire?
+
+On-screen: recipe-card graphic begins building, first field "WHEN" highlighted.
+
+[3:10–3:30] 🏷️ HOW IT WORKS — part two
+The card also says what counts — maybe only certain file types, so it doesn't fire on everything. And finally, it says what to do — run this command, send this notification, whatever you've set up.
+
+On-screen: recipe-card graphic fills in remaining two fields, "WHAT COUNTS" and "DO THIS."
+
+[3:30–3:45] 🏷️ HOW IT WORKS — the payoff
+When that moment happens during your session, Claude Code just reads the card and runs it. No thinking involved. No remembering. No exceptions.
+
+[3:45–4:05] 🏷️ GET STARTED — try the ready-made ones first
+Before building anything yourself, know this: you don't have to start from a blank page. Plenty of people share ready-made hook setups you can just copy in — pre-built formatting, logging, and permission hooks, freely available online. That's the easiest starting point, and it's worth trying before you build anything custom.
+
+On-screen: simple "browse → copy → done" icon row.
+
+[4:05–4:15] 🏷️ BRIDGE
+Once you've tried a few of those, building your own is just as approachable — no coding experience required.
+
+[4:15–4:45] 🏷️ GET STARTED — build your own
+The basic path: open Claude Code's settings file, pick the moment you want to act on — like "after a file gets edited" — optionally narrow it to specific file types, and specify the action. Or, even simpler: just ask Claude Code to do it for you. As an example, you could literally say: "Set up a hook that runs Prettier automatically every time you edit a TypeScript file." Claude Code writes and wires it up itself.
+
+On-screen: numbered steps graphic — "1. Pick the moment → 2. Narrow it down (optional) → 3. Set the action," with the example prompt shown as a text bubble.
+
+[4:45–5:05] 🏷️ ONE QUICK TIP
+One thing beginners get wrong: being vague about when a hook should fire. Don't just say "run this after edits" — specify exactly which files or tools should trigger it. Otherwise you'll end up with a hook firing on things you never meant to automate.
+
+On-screen: small "⚠️ Be specific" callout with a before/after example: "Edit|Write" (too broad) vs. "Edit(.ts)" (precise).*
+
+[5:05–5:25] 🏷️ RECAP + CTA
+So: Hooks are that recipe card taped to Claude's workflow — automatic rules that make certain things always happen, without you asking every time. Start with a ready-made one, then build your own once you're comfortable. If you had one annoying, repetitive step in your own workflow you'd want to automate right now, what would it be? Drop it in the comments — and if this helped, hit like and subscribe for more.
