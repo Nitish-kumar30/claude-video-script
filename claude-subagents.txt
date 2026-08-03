@@ -1,0 +1,87 @@
+Claude Code Subagents — Single Video Script (v1)
+
+[0:00–0:15] HOOK
+
+"Last week my main Claude Code conversation ground to a halt — 20 files read, a dozen searches, all just to track down one bug. Then I found out I never had to let that happen. This is Claude Code Subagents — and by the end of this video, you'll know exactly what they are, and how to start using them today, even if you've never written one yourself."
+
+(On-screen text: "Delegate the mess. Keep your context clean.")
+
+[0:15–0:30] WHO THIS IS FOR / WHERE TO FIND IT
+
+"Quick note before we dive in: Subagents live inside Claude Code — the terminal, desktop, or IDE version of Claude. If you can run a Claude Code session, you already have this. No extra setup required to get started."
+
+(On-screen: simple screenshot callout — Claude Code session, /agents-style folder view)
+
+🏷️ On-screen label: "What is a Subagent?"
+
+[0:30–1:05]
+
+"A subagent is a specialized AI assistant that handles one specific type of task. It runs in its own separate context window, with its own instructions, and its own set of tools.
+
+Think of it like sending an intern to go dig through the archives. You don't want every file they flip through cluttering your desk — you just want the answer they bring back. That's exactly what a subagent does for Claude Code: it goes and does the messy work, then returns just the summary."
+
+(On-screen: main conversation → subagent branches off → returns summary only)
+
+[1:05–1:25] HOW THIS IS DIFFERENT FROM JUST ASKING IN THE MAIN CHAT
+
+"You might be thinking — can't I just ask Claude to do the research right in my conversation? You can, but every file it reads and every search it runs stays in your context, filling it up fast. A subagent does that same digging in an isolated window, and your main conversation only ever sees the result."
+
+[1:25–2:00] WHY IT MATTERS
+
+"Without subagents, long sessions get noisy. Your context fills with logs, file contents, and search results you'll never look at again. Responses get slower, vaguer, and Claude starts losing track of earlier decisions.
+
+With subagents, the noisy work happens somewhere else. You keep a clean, focused conversation — and you can even hand different subagents different tools, so a research subagent can't accidentally edit your files."
+
+[2:00–2:20] QUICK EXAMPLES
+
+"A few examples: a subagent that only reviews code and can't touch it. A subagent that runs your test suite and reports back just the failures. A subagent that researches your codebase's authentication, database, and API layers all at once, in parallel."
+
+🏷️ On-screen label: "See it in action"
+
+[2:20–2:55] BEFORE / AFTER DEMO MOMENT
+
+"Here's what that actually looks like. Without a subagent, you'd ask Claude to investigate a failing test, and watch your context fill up with 20 file reads and grep results before you get an answer. Now, with a 'test-runner' subagent set up, you ask the same simple question — 'find out why this test is failing' — and Claude delegates the whole investigation. All that digging happens off to the side, and you just get the root cause and the fix. Same short prompt, dramatically cleaner conversation."
+
+(On-screen: split screen — left: cluttered context labeled "No Subagent"; right: short summary labeled "With Subagent" — same prompt typed above both)
+
+🏷️ On-screen label: "How it works"
+
+[2:55–3:30] THE SUBAGENT FILE, SIMPLIFIED
+
+"Every subagent is just a small markdown file with two parts. First, a short description at the top that tells Claude 'what this does' and 'when to use it.' Claude always keeps this in mind when deciding who to delegate to.
+
+Second, the actual instructions — the subagent's own system prompt, plus which tools it's allowed to touch. Claude only hands off to that subagent when the task actually matches, so it's not spinning up extra agents for no reason."
+
+(On-screen visual: two-layer diagram — "Description [always visible]" → "Instructions + tools [used only when delegated]")
+
+[3:30–3:50] WHY THAT MATTERS
+
+"This is why subagents stay fast and safe. A code-reviewer subagent that can only read and search literally can't edit your files by accident — the restriction is built right into its definition."
+
+🏷️ On-screen label: "Get started — two ways"
+
+[3:50–4:05] BRIDGE
+
+"Now let's actually get one running. There are two ways to do this, and the first one takes about ten seconds — you don't even have to write anything yourself."
+
+[4:05–4:35] EASIEST: USE THE BUILT-IN SUBAGENTS
+
+"Claude Code already ships with a few subagents ready to go — Explore, for fast read-only codebase searches, Plan, for research before it proposes a plan, and general-purpose, for bigger multi-step jobs. You don't have to configure anything. Just ask Claude to look into something, and it'll delegate automatically when it makes sense."
+
+(On-screen: terminal example — "Use a subagent to run the test suite and report only the failing tests")
+
+[4:35–5:10] BUILD YOUR OWN
+
+"If you want something custom — like a subagent that only reviews code, or one scoped to your own database rules — just describe it to Claude in plain language.
+
+Tell Claude something like: 'Create a personal code-improver subagent that scans files and suggests improvements, and make it read-only.' Claude writes the whole file for you — the description, the tool list, the model, and the instructions — no YAML expertise required."
+
+(On-screen: example prompt — "Create a code-reviewer subagent that only reads and searches code, never edits it")
+
+[5:10–5:25] ONE QUICK TIP
+
+"One tip either way: be specific about 'when' the subagent should be used, and which tools it actually needs. Instead of 'helps with code,' say 'use this after code changes, and only give it read access.' The more specific you are, the safer and more useful it becomes."
+
+[5:25–5:45] RECAP + CTA
+
+"So — a subagent is a focused assistant you set up once, Claude automatically knows when to hand off to it, and you can either lean on the built-in ones like Explore and Plan, or describe a custom one to Claude and have it built for you in seconds. No YAML expertise needed either way."
