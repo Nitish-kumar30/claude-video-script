@@ -1,0 +1,97 @@
+Claude Skills — Single Video Script (v2) 
+
+ 
+
+[0:00–0:15] HOOK 
+
+"Last week I explained my writing style to Claude for the third time this month. Then I found out I only ever had to do that once. This is Claude Skills — and by the end of this video, you'll know exactly what they are, and how to start using them today, even if you've never touched anything technical." 
+
+(On-screen text: "Teach Claude once. Use it forever.") 
+
+[0:15–0:30] WHO THIS IS FOR / WHERE TO FIND IT 
+
+"Quick note before we dive in: Skills work right inside Claude.ai — the regular chat app you already use — under Settings. You don't need Claude Code or any developer tools for this one. If you can upload a file to Claude, you can use a Skill." 
+
+(On-screen: simple screenshot callout — Settings → Capabilities → Skills) 
+
+ 
+
+🏷️ On-screen label: "What is a Skill?" 
+
+[0:30–1:05] 
+
+"A Skill is a small folder with instructions in it. Inside, there's one file that tells Claude: 'When someone asks for X, here's exactly how I want you to do it.' 
+
+Think of it like a recipe card. You don't re-teach a chef how to make pasta every single time — you write the recipe once, and any time pasta comes up, they just follow it. That's exactly what a Skill is for Claude." 
+
+(On-screen: folder → instructions file → recipe card visual) 
+
+[1:05–1:25] HOW THIS IS DIFFERENT FROM JUST TYPING INSTRUCTIONS 
+
+"You might be thinking — can't I just tell Claude my preferences in the chat? You can, but you'd be typing that same paragraph every single conversation. A Skill saves it permanently and Claude brings it up automatically, only when it's actually relevant — you never have to repeat or remind it again." 
+
+[1:25–2:00] WHY IT MATTERS 
+
+"Without Skills, every conversation starts from zero. You explain your brand voice again. Your report format again. Your workflow again. It's repetitive, and results are inconsistent, because you never explain it exactly the same way twice. 
+
+With a Skill, you write it down once, and Claude picks it up automatically whenever it's relevant. No re-explaining, no reminding — it just quietly works in the background." 
+
+[2:00–2:20] QUICK EXAMPLES 
+
+"A few examples: a Skill that formats every report in your company's exact style. One that always follows your personal writing voice. One that knows the exact steps you like your presentations built in." 
+
+ 
+
+🏷️ On-screen label: "See it in action" 
+
+[2:20–2:55] BEFORE / AFTER DEMO MOMENT 
+
+"Here's what that actually looks like. Without a Skill, you'd ask Claude for a report, and get back... something generic — maybe not your format, missing your usual sections. Now, with a 'Weekly Report' Skill turned on, you ask the exact same simple question — 'write this week's report' — and Claude automatically follows your structure, your headers, your tone, without you specifying any of it. Same short prompt, dramatically better result, because Claude already knows the rules." 
+
+(On-screen: split screen — left: generic plain output labeled "No Skill"; right: structured, branded output labeled "With Skill" — same prompt typed above both) 
+
+ 
+
+🏷️ On-screen label: "How it works" 
+
+[2:55–3:30] THE INSTRUCTIONS FILE, SIMPLIFIED 
+
+"Every Skill has two parts. First, a short description at the top — just a couple of lines — that tells Claude 'what this does' and 'when to use it.' Claude always keeps this in mind, like a name tag. 
+
+Second, the full instructions. Claude only opens this part up when it decides the Skill is actually relevant to what you asked. So it's not cluttering things up all the time — it reads the full instructions only when it needs them." 
+
+(On-screen visual: two-layer diagram — "Short description [always visible]" → "Full instructions [opened only when needed]") 
+
+[3:30–3:50] WHY THAT MATTERS 
+
+"This is why Skills stay light and fast. It's like a table of contents — you don't read the whole book to know which chapter to open." 
+
+ 
+
+🏷️ On-screen label: "Get started — two ways" 
+
+[3:50–4:05] BRIDGE 
+
+"Now let's actually get one running. There are two ways to do this, and the first one takes about ten seconds." 
+
+[4:05–4:35] EASIEST: USE A READY-MADE SKILL 
+
+"Anthropic already built several Skills for common stuff — creating Word documents, PowerPoint slides, spreadsheets, PDFs, and more. You don't have to build anything. Just go to Settings, browse the available Skills, and turn on the ones you want. That alone covers a lot of what most people need." 
+
+(On-screen: screenshot of the Skills list in Settings with toggles) 
+
+[4:35–5:10] BUILD YOUR OWN WITH SKILL-CREATOR 
+
+"If you want something custom to you — like your own report format or writing voice — Claude has a built-in helper called 'skill-creator.' Just tell Claude: 'Use the skill-creator to help me build a Skill for [your task].' 
+
+It asks you a few simple questions — what you want it to do, and when it should kick in — and builds the whole thing for you. No coding required." 
+
+(On-screen: example prompt — "Use skill-creator to help me build a skill for writing my weekly reports") 
+
+[5:10–5:25] ONE QUICK TIP 
+
+"One tip either way: be specific about 'when' the Skill should be used. Instead of 'helps with reports,' say 'use this when I ask to write a weekly sales report.' The more specific you are, the better Claude knows exactly when to bring it in." 
+
+[5:25–5:45] RECAP + CTA 
+
+"So — a Skill is instructions you teach Claude once, it automatically knows when to use it, and you can either install one Anthropic already built, or create your own in minutes with skill-creator. No coding needed either way.
